@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react'
 
+const links = [
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Experience', href: '#experience' },
+]
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
 
@@ -13,18 +20,19 @@ export default function Navbar() {
     <nav className={`nav${scrolled ? ' scrolled' : ''}`} id="nav">
       <div className="nav-inner">
         <a href="#" className="nav-logo">
-          <span>ghPages</span>
+          <span>cosetha.</span>
         </a>
-        <ul className="nav-links">
-          <li><a href="#features">Stack</a></li>
-          <li><a href="#steps">Deploy</a></li>
-          <li><a href="#code">Workflow</a></li>
-          <li>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-              GitHub ↗
-            </a>
-          </li>
-        </ul>
+
+        <div className="nav-links">
+          {links.map((l) => (
+            <a key={l.href} href={l.href}>{l.label}</a>
+          ))}
+          <a href="#contact" className="nav-cta">Contact Me</a>
+        </div>
+
+        <button className="nav-toggle" aria-label="Menu">
+          <span /><span /><span />
+        </button>
       </div>
     </nav>
   )

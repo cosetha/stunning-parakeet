@@ -1,36 +1,35 @@
 import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Features from './components/Features'
-import Steps from './components/Steps'
-import CodePreview from './components/CodePreview'
+import About from './components/About'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
   useEffect(() => {
-    // Mouse glow follow effect
-    const handleMouseMove = (e: MouseEvent) => {
-      document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`)
-      document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`)
+    // Mouse-follow glow
+    const onMove = (e: MouseEvent) => {
+      document.documentElement.style.setProperty('--mx', `${e.clientX}px`)
+      document.documentElement.style.setProperty('--my', `${e.clientY}px`)
     }
-    window.addEventListener('mousemove', handleMouseMove)
+    window.addEventListener('mousemove', onMove)
 
-    // Intersection Observer for scroll reveal
+    // Scroll-reveal observer
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible')
-          }
+          if (entry.isIntersecting) entry.target.classList.add('visible')
         })
       },
-      { threshold: 0.1, rootMargin: '0px 0px -60px 0px' }
+      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' }
     )
-
     document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('mousemove', onMove)
       observer.disconnect()
     }
   }, [])
@@ -41,9 +40,11 @@ export default function App() {
       <div className="bg-glow" />
       <Navbar />
       <Hero />
-      <Features />
-      <Steps />
-      <CodePreview />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
       <Footer />
     </div>
   )
