@@ -1,31 +1,31 @@
 const experiences = [
   {
-    date: '2023 — Present',
-    role: 'Senior Frontend Engineer',
-    company: 'TechCorp Inc.',
+    date: '2023 - Present',
+    role: 'Frontend & Mobile Development',
+    company: 'Independent & Open Source',
     description:
-      'Leading the frontend architecture for a B2B SaaS platform. Introduced a component library that reduced development time by 40%. Mentoring a team of 4 junior developers.',
+      'Developing cross-platform tools and web applications using Flutter, Dart, and modern JavaScript frameworks.',
   },
   {
-    date: '2021 — 2023',
-    role: 'Full-Stack Developer',
-    company: 'StartupXYZ',
+    date: '2021 - 2023',
+    role: 'Full-Stack Web Developer',
+    company: 'Client & Web Projects',
     description:
-      'Built the core product from MVP to production serving 50K+ users. Owned the full stack — React frontend, Node.js APIs, and PostgreSQL database. Implemented CI/CD pipelines with GitHub Actions.',
+      'Built spatial information systems, admin dashboards, and booking applications with Laravel, Blade, and Vue.js.',
   },
   {
-    date: '2020 — 2021',
+    date: '2020 - 2021',
     role: 'Frontend Developer',
-    company: 'Digital Agency Co.',
+    company: 'Single Page Apps & PWAs',
     description:
-      'Developed responsive web applications for clients across e-commerce, healthcare, and fintech. Delivered 15+ projects on time with a focus on performance and accessibility.',
+      'Created single-page applications and offline-ready recipe PWAs using Vue.js, Vuex state management, and REST APIs.',
   },
   {
-    date: '2019 — 2020',
-    role: 'Junior Web Developer',
-    company: 'WebStudio',
+    date: '2019 - 2020',
+    role: 'Junior Developer',
+    company: 'Early Projects & Studies',
     description:
-      'Started my career building WordPress sites and custom landing pages. Quickly transitioned to React and modern JavaScript tooling.',
+      'Started building responsive web layouts, calculators, and authentication flows on Android and the web.',
   },
 ]
 
@@ -34,10 +34,9 @@ export default function Experience() {
     <section className="section" id="experience">
       <div className="reveal">
         <p className="section-label">Experience</p>
-        <h2 className="section-title">Where I've worked</h2>
+        <h2 className="section-title">Timeline</h2>
         <p className="section-subtitle">
-          A timeline of my professional journey, from first lines of code to
-          leading engineering teams.
+          Key development milestones across open source, client work, and personal projects.
         </p>
       </div>
 

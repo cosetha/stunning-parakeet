@@ -19,9 +19,8 @@ export default function Hero() {
           </h1>
 
           <p className="hero-desc">
-            Full-stack developer specializing in crafting performant, accessible,
-            and beautifully designed web applications. Turning ideas into
-            exceptional digital experiences.
+            Developer working with Vue.js, Laravel, Flutter, and React.
+            I build web applications, tools, and open-source packages.
           </p>
 
           <div className="hero-actions">

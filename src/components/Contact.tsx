@@ -10,9 +10,9 @@ export default function Contact() {
     <section className="section" id="contact">
       <div className="reveal">
         <p className="section-label">Contact</p>
-        <h2 className="section-title">Let's work together</h2>
+        <h2 className="section-title">Get in touch</h2>
         <p className="section-subtitle">
-          Have a project in mind or just want to say hi? I'd love to hear from you.
+          Send a message or reach out directly.
         </p>
       </div>
 
