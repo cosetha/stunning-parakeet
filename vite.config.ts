@@ -7,5 +7,5 @@ export default defineConfig({
   // For GitHub Pages, the base path should match the repo name.
   // If deploying to https://<username>.github.io/<repo>/, set base to '/<repo>/'.
   // If deploying to https://<username>.github.io/ (user/org site), set base to '/'.
-  base: '/githubpages/',
+  base: '/stunning-parakeet/',
 })
